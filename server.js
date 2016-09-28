@@ -63,7 +63,7 @@ var htmltemp=`
 </html>
 
 `
-    return htmlTepmlate;
+    return htmlTemplate;
 }
 
 
