@@ -33,7 +33,7 @@ var date=data.date;
 var content=data.content;
 var heading=data.heading;
 
-var htmltemp=`
+var htmlTemplate=`
 
 <html>
     
