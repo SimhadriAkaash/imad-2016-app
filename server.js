@@ -26,10 +26,49 @@ var ArticleOne= {
 };
 
 
+function createTemplate(data){
+
+var title=data.title;
+var date=data.date;
+var content=data.content;
+var heading=data.heading;
+
+var htmltemp=`
+
+<html>
+    
+    <head>
+        <title>
+           ${title}
+            </title>
+            </head>
+<body>
+  
+  <div>
+        <a href="">Home</a>
+  
+  </div>
+  <hr>     
+  <h3>${heading}</h3>
+
+  <link href="/ui/style.css" rel="stylesheet" />
+  <div >${date}</div>
+  <div class="container" >
+     ${content}
+  </div>
+  
+  
+    </body>
+
+</html>
+
+`
+    return htmlTepmlate;
+}
 
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne))
 });
 
 app.get('/article-two', function (req, res) {
