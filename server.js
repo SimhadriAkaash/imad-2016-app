@@ -8,6 +8,26 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
+var ArticleOne= {
+    title:'Article one | Akaash',
+    heading:'Article one',
+    date:'29 Sept 16',
+    content : `
+    <p>
+          This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.
+      </p> 
+      <p>
+          This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.
+      </p>
+        <p>
+          This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.This is the content ofthe article one.
+      </p>`
+};
+
+
+
+
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
