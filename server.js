@@ -68,7 +68,7 @@ var htmltemp=`
 
 
 app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne))
+  res.send(createTemplate(article-one))
 });
 
 app.get('/article-two', function (req, res) {
