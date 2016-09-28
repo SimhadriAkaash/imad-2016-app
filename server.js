@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var ArticleOne= {
+var articleOne= {
     title:'Article one | Akaash',
     heading:'Article one',
     date:'29 Sept 16',
@@ -68,7 +68,7 @@ var htmltemp=`
 
 
 app.get('/article-one', function (req, res) {
-  res.send(createTemplate(article-one))
+  res.send(createTemplate(articleOne))
 });
 
 app.get('/article-two', function (req, res) {
