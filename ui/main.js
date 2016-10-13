@@ -1,18 +1,12 @@
-console.log('Loaded!');
-//Change the text of the main-text div
-var element= document.getElementById('main-text');
-element.innerHTML='New Value in JS';
-
-
-//move the image
-var img = document.getElementById('madi');
-var marginLeft=0;
-function moveRight()
+// Counter Code
+var button=document.getElementById('counter');
+button.onclick=function()
 {
-    marginLeft = marginLeft +1;
-    img.style.marginLeft=marginLeft+'px';
+    
+    
+ 
+ 
+ counter=counter+1;
+ var span=document.getElementById('count');
+ span.innerHTML=counter.toString();
 }
-img.onclick=function()
-{
-    var interval= setInterval(moveRight,50);
-};
