@@ -19,6 +19,6 @@ button.onclick=function()
      
  };
  
- request.opem('GET','http://simhadriakaash.imad.hasura-app.io/counter',true);
+ request.open('GET','http://simhadriakaash.imad.hasura-app.io/counter',true);
  request.send(null);
 };
