@@ -65,6 +65,13 @@ var htmlTemplate=`
 `
     return htmlTemplate;
 }
+app.get(''/test-db,fucntion(req,res)){
+   //make a select request
+   //return the response with the results
+  
+}};
+
+
 var counter=0;
 
 app.get('/counter', function (req, res) {
